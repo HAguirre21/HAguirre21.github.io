@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+body::-webkit-scrollbar{
+    width: 8px;
+    
+}
+body::-webkit-scrollbar-thumb{
+    background: #000;
+    border-radius: 4px;
+}
+
+.margen-interno{
+    padding: 0 50px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    
+}
+a:hover{
+    color: white;
+    
+}
+
+
+.padre{
+   display: flex;
+   flex-flow: column nowrap; 
+}
+
+.header{
+    background : url(imagenes/jakub-dziubak-XtUd5SiX464-unsplash.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap; 
+
+}
+.menu{
+    display: flex;
+    flex-flow: row nowrap;
+    background:rgba(0, 0, 0, .1);
+        height: 100px;
+    align-items: center;
+}
+.logo{
+
+    flex: 1 1 auto;
+   
+}
+.logo a{
+    color: #000;
+    font-size: 26px;
+    
+}
+
+
+.nav{
+  
+    flex: 5 1 auto;
+   
+}
+.nav a{
+    font-size: 11px;
+    padding: 0 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.social{
+    flex: 1 1 auto;
+   display: flex;
+
+}
+.social a{
+    font-size: 18px;
+    padding: 0 5px;
+
+}
+
+.principal{
+    /*background-color: salmon;/*/
+    display: flex;
+    align-items: center;
+    height:470px;
+}
+input{
+    width: 20%;
+    margin: 0 auto;
+    font-size: 19px;
+    background: transparent;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+    h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.6;
+    
+    }
+.section{
+    background-color:white;
+    display: flex;
+}
+.articulo{
+    background-color: #f7f7f7;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.article{
+    flex: 1 1 40%;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px 10px 0 0px;
+    flex: 1 1 45%;
+    
+}
+.article img{
+    width: 96%;
+
+}
+.article a{
+    color: white;
+    font-size: 13px;
+    padding: 10px ;
+    background: black;
+    margin: 10px 0;
+    display: inline-block;
+    transition: background-color 2s;
+}
+.article a:hover{
+    background-color: blue;
+   
+}
+.ando{
+    color: #fff;
+}
+    h3{
+    color: black;
+    font-size: 13px;
+    padding: 10px 0;
+    margin-top: -70px;
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+    h2{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0 0 10px 0;
+        color: black;
+        
+    }
+
+
+.navegacion{
+    flex: 1 1 100%;
+    background :#000;
+    margin: 10px 10px 0 0;
+}
+.navegacion a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 0 10px; 
+    letter-spacing: 2px;
+
+}
+.aside{
+    flex: 1 1 auto;
+    margin: 10px 5px 10px 0;
+}
+
+
+h4{
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+
+}
+
+.publicidad{
+    /*background-color: darkcyan;*/
+}
+.footer{
+    background-color: #000;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+    
+}
+.pie{
+    /*background-color: darkkhaki;*/
+    width: 300px;
+    
+
+}
+.pie a{
+    color:white;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+    margin: 10px 10px 0 0;
+}
+
+
+@media all and (max-width: 1040px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        font-size: 14px;
+    }
+    .principal{
+        height: 400px;
+    }
+}
+@media all and (max-width: 762px){
+    .articulo{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 13px;
+    }
+}
+
+@media all and (max-width: 650px){
+    .off{
+        display: none;
+    }
+    .nav a{
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 11px;
+    }
+}
+
